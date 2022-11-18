@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10rem;
+}
+
+.todo {
+	display: grid;
+  	grid-auto-flow: row;
+}
+
+.todo-input {
+	width: 30rem;
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.todo-list{
+	list-style: none;
+	padding: 0;
+}
+
+.todo-list-li {
+	display: flex;
+	justify-content: space-between;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	margin-bottom: 5px;
+	cursor: pointer;
+	/*width: 30rem;*/
+}
+
+.todo-list-li.completed span {
+  text-decoration: line-through;
+}
+
+.icon {
+	z-index: 10;
+}
